@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(1, 6, 30, 0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 3, 14, 0.5); 
+}
+body {
+	background: radial-gradient(#d6f7ff, #cbefdd);
+	overflow-x: hidden;
+}
+.section-padding {
+	padding: 100px 0;
+}
+.logo{
+	font-family: 'Sono', sans-serif;
+	letter-spacing: 0.3rem;
+	font-style: italic;
+	text-shadow: 0px 2px 2px rgba(1, 1, 22, 0.4); 
+}
+.word{
+	color:rgb(12, 12, 112)
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom:150px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 50px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.navbar{
+    /* background-color:  rgba(205, 204, 239, 0.5); ; */
+	background-color: #d6f2e4;
+}
+.navbar.scrolled{
+	background-color: #000;
+}
+.home{
+background-color: #bcf8da;
+font-weight: bold;
+}
+.home2{
+	border-color:#bcf8da;
+	color:white;
+	font-weight: bold;
+	
+}
+
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgb(5, 5, 36);
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.work-card{
+    height:16.5rem;
+}
+.work-card .content{
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+}
+.imgs:hover{
+    opacity: 0.5;
+}
+.work-card:hover .content{
+    margin-top : 30px;
+    visibility : visible;
+    
+    transition-delay: 0.2s;
+    opacity : 1.5;
+    /* background-color:#fff; */
+}
+.service_img{
+	width:100%;
+}
+.service-head{
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+
+}
+.service-head:hover{
+	text-decoration: underline;
+}
+.service-card{
+	margin-top: 250px;
+	
+}
+.service-btn{
+	transition: transform .2s;
+}
+.service-btn:hover{
+	/* color: #111; */
+	
+            border-radius:100px;
+			
+			background-color: #dae423;
+            box-shadow: 0 0 50px #dae423;
+	transform:scale(1.5);
+
+	
+}
+.cards{
+	background-color: rgb(2, 26, 25);
+}
+.service-container{
+	margin-top: -810px;
+	/* width: 2000px; */
+	height:810px;
+	background-color:  rgba(1, 1, 12, 0.726); 
+}
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.services .card-body i {
+	font-size: 50px;
+}
+.team .card-body i {
+	font-size: 20px;
+}
+.testimonial{
+	height:810px;
+	background-color:  rgba(153, 183, 169, 0.5);
+	backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px); 
+}
+.team-card{
+	background-color:  rgba(153, 183, 169, 0.5);
+}
+.team-body{
+	margin-top: 200px;
+}
+.overlays{
+	margin-top: 280px;
+	background-color:  rgba(153, 183, 169, 0.5);
+	height:150px;
+
+}
+.get{
+	font-size: 40px;
+	letter-spacing: 0.3rem;
+	line-height: 3.5rem;
+	margin-top: 90px;
+	color:rgb(2, 2, 46)
+}
+.form{
+	/* width: 350px;   */
+    display: flex;  
+    min-height: 550px;  
+    position: relative;  
+    border-radius: 10px;  
+    /* align-items: center;   */
+    justify-content: center;  
+    backdrop-filter: blur(5px);  
+    background: rgba(4, 146, 66, 0.1);  
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+	width: 500px;
+}
+.input__box 
+{ 
+    /* width: 100%;   */
+      margin-top: 80px;  
+ }
+ .input__box2{
+	margin-top: 30px;
+ }
+ .form-input{
+    width: 300px;  
+    margin-left: 120px;
+    border: none;  
+    outline: none;  
+    font-size: 16px;  
+    padding: 10px 20px;  
+    letter-spacing: 1px;  
+    border-radius: 35px;  
+    background: rgba(255, 255, 255, 0.2);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+ }
+ .form-input2{
+	
+	width: 350px;
+	height: 150px;  
+	margin-left: 120px;
+    border: none;  
+    outline: none;  
+    font-size: 16px;  
+    padding: 10px 20px;  
+    letter-spacing: 1px;  
+    border-radius: 15px;  
+    background: rgba(255, 255, 255, 0.2);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+ }
+ .form-submit{
+    width: 380px;;
+    /* height: 30px; */
+    margin: 20px 100px 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(5, 64, 68, 0.2); 
+    color: #666;
+    font-size: 1.25rem;
+    outline: none;
+    cursor: pointer;
+ }
+ .form-submit:hover{
+	background-color: rgba(28, 171, 243, 0.2); 
+ }
+ .bg{
+	background-color: #d6f2e4;
+ }
+ .eml{
+	margin-top: -25px;
+ }
+ .social{
+	margin-left: -28px;
+	margin-top: 5px;
+ }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
